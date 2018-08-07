@@ -15,7 +15,7 @@
 		03AC2E6E2118E0D200F88A78 /* Oh_Snap_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AC2E6D2118E0D200F88A78 /* Oh_Snap_2Tests.swift */; };
 		03AC2E792118E0D200F88A78 /* Oh_Snap_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AC2E782118E0D200F88A78 /* Oh_Snap_2UITests.swift */; };
 		03D383F52119F0EE009A3A6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D383F42119F0EE009A3A6C /* ViewController.swift */; };
-		03D383F7211A3476009A3A6C /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D383F6211A3476009A3A6C /* PostTableViewController.swift */; };
+		03D383FB211A3C12009A3A6C /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D383FA211A3C12009A3A6C /* PhotoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		03AC2E782118E0D200F88A78 /* Oh_Snap_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oh_Snap_2UITests.swift; sourceTree = "<group>"; };
 		03AC2E7A2118E0D200F88A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D383F42119F0EE009A3A6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03D383F6211A3476009A3A6C /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		03D383FA211A3C12009A3A6C /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +103,12 @@
 			children = (
 				03AC2E552118E0D100F88A78 /* AppDelegate.swift */,
 				03AC2E592118E0D100F88A78 /* Main.storyboard */,
-				03D383F6211A3476009A3A6C /* PostTableViewController.swift */,
 				03D383F42119F0EE009A3A6C /* ViewController.swift */,
 				03AC2E5F2118E0D200F88A78 /* Assets.xcassets */,
 				03AC2E612118E0D200F88A78 /* LaunchScreen.storyboard */,
 				03AC2E642118E0D200F88A78 /* Info.plist */,
 				03AC2E5C2118E0D100F88A78 /* Oh_Snap_2.xcdatamodeld */,
+				03D383FA211A3C12009A3A6C /* PhotoTableViewController.swift */,
 			);
 			path = "Oh Snap!2";
 			sourceTree = "<group>";
@@ -263,8 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D383F52119F0EE009A3A6C /* ViewController.swift in Sources */,
-				03D383F7211A3476009A3A6C /* PostTableViewController.swift in Sources */,
 				03AC2E562118E0D100F88A78 /* AppDelegate.swift in Sources */,
+				03D383FB211A3C12009A3A6C /* PhotoTableViewController.swift in Sources */,
 				03AC2E5E2118E0D100F88A78 /* Oh_Snap_2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
