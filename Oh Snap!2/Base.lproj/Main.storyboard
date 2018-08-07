@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Post Table View Controller-->
         <scene sceneID="49o-qQ-vGh">
             <objects>
-                <viewController id="IQb-x6-MLN" sceneMemberID="viewController">
+                <viewController id="IQb-x6-MLN" customClass="PostTableViewController" customModule="Oh_Snap_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H0H-T6-2qW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,50 +35,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-ca-dU9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6JA-NQ-4lf">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96470588239999999" green="1" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.96470588239999999" green="1" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <stackView key="tableFooterView" opaque="NO" contentMode="scaleToFill" id="CI1-WA-EE9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="csj1xs9exrhnkaqklnua" translatesAutoresizingMaskIntoConstraints="NO" id="QXr-mH-xxe">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="155"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="150" id="YzK-RV-j9b"/>
-                                                <constraint firstAttribute="width" constant="150" id="pDk-HE-357"/>
-                                            </constraints>
-                                        </imageView>
-                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1uk-jb-ONw">
-                                            <rect key="frame" x="150" y="0.0" width="225" height="155"/>
-                                            <color key="backgroundColor" red="0.96470588239999999" green="1" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="sectionIndexBackgroundColor" red="0.96470588239999999" green="1" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="😊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NJT-Xy-7AF">
-                                                <rect key="frame" x="0.0" y="0.0" width="225" height="44"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zhp-cd-Izg">
-                                                <rect key="frame" x="0.0" y="44" width="225" height="155"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
-                                                <color key="textColor" red="0.062745098040000002" green="0.1333333333" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </tableView>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.96470588239999999" green="1" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="QXr-mH-xxe" firstAttribute="leading" secondItem="CI1-WA-EE9" secondAttribute="leading" id="1YJ-WG-PsZ"/>
-                                        <constraint firstAttribute="trailing" secondItem="1uk-jb-ONw" secondAttribute="trailing" id="dsQ-BP-kHy"/>
-                                        <constraint firstItem="1uk-jb-ONw" firstAttribute="leading" secondItem="QXr-mH-xxe" secondAttribute="trailing" id="l1V-ry-lqw"/>
-                                        <constraint firstItem="1uk-jb-ONw" firstAttribute="leading" secondItem="QXr-mH-xxe" secondAttribute="trailing" id="y2Y-Sx-AcR"/>
-                                    </constraints>
-                                </stackView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588239999999" green="1" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inp-gK-YAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="176.80000000000001" y="134.48275862068968"/>
+            <point key="canvasLocation" x="176.5" y="133.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -323,10 +283,8 @@
             <point key="canvasLocation" x="-762.39999999999998" y="134.48275862068968"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="csj1xs9exrhnkaqklnua" width="16" height="16"/>
-    </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="cpy-wg-95m"/>
         <segue reference="e6k-fi-1Eb"/>
     </inferredMetricsTieBreakers>
 </document>
